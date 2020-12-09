@@ -58,3 +58,11 @@ https://github.com/microsoft/winrt-rs
 そしてビルドが遅い。  
 依存するWinRTコンポーネントのチェックのたびにgithubと通信してるぽい。
 
+### Cargo.tomlで謎エラー
+
+ビルドが通ってるのかよくわからない状態に。原因不明。  
+👇これか。。。  
+https://github.com/microsoft/winrt-rs/issues/381  
+https://github.com/microsoft/winrt-rs/pull/382  
+
+
