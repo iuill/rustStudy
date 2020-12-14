@@ -51,15 +51,17 @@ https://github.com/toml-lang/toml
 * イテレータ  
 C#のLINQみたいに書ける。
 
-* 三項演算子
-存在しない。if～elseでつらつら書く。
+* 三項演算子  
+存在しない。if～elseでつらつら書く。  
+式なので結果をそのまま変数にいれる形で書けばちょっと楽。
 
 * クラスはない  
 構造体にメソッドを追加はできる。
 
 * シンタックスチェック、ビルド  
 通常時はcheckですませる。
-exe生成したいときにbuild。
+exe生成したいときにbuild。  
+コンパイラのエラーメッセージはかなりわかりやすい気がする。
 
 * Cargo  
 ビルド、パッケージマネージャ、ドキュメント生成等
@@ -72,6 +74,10 @@ exe生成したいときにbuild。
 デバッガとしてCodeLLDBを入れてみた。普通に使える。  
 https://qiita.com/84zume/items/377033ab6b6aee2a68d7
 
+* スタックトレース的なの（バックトレース）  
+RUST_BACKTRACE環境変数にセットする。 ( 0 / 1 / full )  
+powershellの場合 `$env:RUST_BACKTRACE="full"` みたいにやると環境変数に設定できる。  
+参照する場合は `get-childitem env:RUST_BACKTRACE`  
 
 # Rust/WinRT
 
@@ -101,3 +107,8 @@ https://github.com/microsoft/winrt-rs/pull/382
 でもビルドは通るし、exeも生成されている。（拡張機能がどれかバグってる？）
 
 Rust/WinRTの更新頻度かなり高いので、手を出すのは一旦保留。
+
+## リファレンス
+
+* WinRT  
+https://docs.microsoft.com/ja-jp/uwp/api/?view=winrt-19041
